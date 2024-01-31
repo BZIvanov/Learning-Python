@@ -38,3 +38,7 @@ a = [1, 2]
 b = [1, 2]
 print(a == b)  # True
 print(a is b)  # False
+
+# example with ternary operator
+my_value = 9
+print('Nine') if my_value == 9 else print('Not Nine') # Nine
