@@ -27,6 +27,14 @@ username = "Iva"
 print(type(username))  # <class 'str'>
 print(f"Hello, {username}")  # Hello, Iva
 
+# multiline text
+mulitlines_text = '''
+This is 
+    multi line
+text.
+'''
+print(mulitlines_text)
+
 # NONE
 
 # example of None usage, it is similar to null in javascript
