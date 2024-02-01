@@ -10,6 +10,7 @@ class Cat(Animal):
 
 
 my_cat = Cat()
-my_cat.make_sound("Meow")  # Meow
+my_cat.make_sound("Meow")  # Animay says: Meow
+print(my_cat.color) # colorful
 print(isinstance(my_cat, Animal))  # True
 print(isinstance(my_cat, Cat))  # True

@@ -1,3 +1,5 @@
+# SIMPLE LIST
+
 fruits = ["apple", "kiwi", "banana"]
 print(len(fruits))  # 3
 print(fruits[1])  # kiwi
