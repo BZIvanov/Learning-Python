@@ -1,3 +1,5 @@
+# SIMPLE DICTIONARY
+
 person = {"name": "Iva", "age": 29, "is_online": True}
 print(person["name"])  # Iva
 print(person.get("age"))  # 29
