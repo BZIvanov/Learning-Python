@@ -1,5 +1,7 @@
 # it will import the whole module
 import random
+# it will import only pi from math module
+from math import pi
 
 # with the below line we can import random module and give it a different name to use below in the code
 # import random as rnd
@@ -11,3 +13,5 @@ import random
 
 print(random.randint(1, 5))
 print(random.choice(["apple", "kiwi", "banana"]))
+
+print(pi)
