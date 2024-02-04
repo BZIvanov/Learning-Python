@@ -12,5 +12,6 @@ my_file.seek(0)
 print(my_file.read())
 
 print(my_file.closed)  # False
+# it is important to close our files after we are done working with them
 my_file.close()
 print(my_file.closed)  # True
