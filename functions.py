@@ -1,10 +1,10 @@
-def sayHello():
+def say_hello():
     """Prints the Hello string"""
     print("Hello")
 
 
-sayHello()
-print(sayHello.__doc__)  # Prints the Hello string
+say_hello()
+print(say_hello.__doc__)  # Prints the Hello string
 
 
 def get_greeting(username):
