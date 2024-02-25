@@ -30,8 +30,7 @@ def generate_password():
 
     return ''.join(password_list)
 
-password = generate_password()
-print(password)
+print(generate_password())
 
 # SOLUTION 2
 def generate_password():
@@ -39,23 +38,23 @@ def generate_password():
 
     # get 1 random of each characters type
     digit = random.choices(string.digits, k=1)
-    lowercass = random.choices(string.ascii_lowercase, k=1)
+    lowercase = random.choices(string.ascii_lowercase, k=1)
     uppercase = random.choices(string.ascii_uppercase, k=1)
     symbol = random.choices(string.punctuation, k=1)
   
     # build the password with 4 type of characters
-    password_characters = digit + lowercass + uppercase + symbol
+    password_characters = digit + lowercase + uppercase + symbol
 
     all_characters = string.digits + string.ascii_lowercase + string.ascii_uppercase + string.punctuation
 
     # fill the remainging passwords slots with random characters from all types of characters
-    for _ in range(password_length - 4, 0, -1):
+    for _ in range(password_length - 4):
         password_characters += random.choices(all_characters, k=1)
 
+    # shuffle the password so it won't always start with digit, then lowercase, etc...
     password_list = list(password_characters)
     random.shuffle(password_list)
 
     return ''.join(password_list)
 
-password = generate_password()
-print(password)
+print(generate_password())
