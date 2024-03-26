@@ -1,3 +1,5 @@
+# EXAMPLE: Simple self documenting function
+
 def say_hello():
     """Prints the Hello string"""
     print("Hello")
@@ -6,6 +8,7 @@ def say_hello():
 say_hello()
 print(say_hello.__doc__)  # Prints the Hello string
 
+# EXAMPLE: Providing arguments to a function
 
 def get_greeting(username):
     return f"Hello, {username}"
@@ -14,6 +17,7 @@ def get_greeting(username):
 greeting = get_greeting("Iva")
 print(greeting)  # Hello, Iva
 
+# EXAMPLE: Providing arguments with custom order
 
 def get_names(first, last):
     return f"{first} {last}"
@@ -22,6 +26,7 @@ def get_names(first, last):
 print(get_names(first="Iva", last="Ivanova"))  # Iva Ivanova
 print(get_names(last="Ivanova", first="Iva"))  # Iva Ivanova
 
+# EXAMPLE: Collecting all the arguments
 
 # adding a star before the argument name will collect all function arguments in a tuple
 def sum_numbers(*args):
@@ -41,3 +46,10 @@ def list_names(**kwargs):
 
 
 print(list_names(first="Iva", last="Ivanova"))
+
+# EXAMPLE: Default value for a function
+
+def default_greet(name="World"):
+    return f"Hello, {name}!"
+
+print(default_greet()) # Hello, World!
