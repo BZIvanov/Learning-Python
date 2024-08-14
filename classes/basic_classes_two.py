@@ -6,8 +6,7 @@ class BankAccount:
     def __init__(self, initial_amount, account_name):
         self.balance = initial_amount
         self.name = account_name
-        print(
-            f"\nAccount '{self.name}' created.\nBalance = ${self.balance:.2f}")
+        print(f"\nAccount '{self.name}' created.\nBalance = ${self.balance:.2f}")
 
     def get_balance(self):
         print(f"\nAccount '{self.name}' balance = ${self.balance:.2f}")
@@ -32,17 +31,17 @@ class BankAccount:
             print("\nWithdraw complete.")
             self.get_balance()
         except BalanceException as error:
-            print(f'\nWithdraw interrupted: {error}')
+            print(f"\nWithdraw interrupted: {error}")
 
     def transfer(self, amount, account):
-        try: 
-            print('\nBeginning Transfer')
-            self.viable_transaction(amount) 
-            self.withdraw(amount) 
-            account.deposit(amount) 
-            print('\nTransfer completed!')
-        except BalanceException as error: 
-            print(f'\nTransfer interrupted. {error}')
+        try:
+            print("\nBeginning Transfer")
+            self.viable_transaction(amount)
+            self.withdraw(amount)
+            account.deposit(amount)
+            print("\nTransfer completed!")
+        except BalanceException as error:
+            print(f"\nTransfer interrupted. {error}")
 
 
 Iva = BankAccount(200, "Iva")

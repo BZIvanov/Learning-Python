@@ -30,9 +30,10 @@ def outer_function():
     def inner_function():
         nonlocal x
         x = 20
-        print(x) # 20
+        print(x)  # 20
 
     inner_function()
-    print(x) # 20
+    print(x)  # 20
+
 
 outer_function()

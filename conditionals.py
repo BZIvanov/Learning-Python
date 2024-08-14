@@ -41,4 +41,4 @@ print(a is b)  # False
 
 # example with ternary operator
 my_value = 9
-print('Nine') if my_value == 9 else print('Not Nine') # Nine
+print("Nine") if my_value == 9 else print("Not Nine")  # Nine

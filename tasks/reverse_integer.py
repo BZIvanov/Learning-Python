@@ -1,5 +1,6 @@
 # Print integer number with reversed digits
 
+
 # Solution 1
 def reverse_integer(num):
     num_str = str(num)
@@ -10,9 +11,10 @@ def reverse_integer(num):
 
     return reversed_num
 
+
 n = 12345
 reversed_number = reverse_integer(n)
-print(reversed_number) # 54321
+print(reversed_number)  # 54321
 
 
 # Solution 2
@@ -24,5 +26,4 @@ while number > 0:
     reverse_number = reverse_number * 10 + remainder
     number = int(number / 10)
 
-print(reverse_number) # 54321
-
+print(reverse_number)  # 54321

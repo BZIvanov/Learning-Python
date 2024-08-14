@@ -7,4 +7,3 @@ except Exception as error:
     print(error)
 finally:
     print("This text will always be printed")
-    

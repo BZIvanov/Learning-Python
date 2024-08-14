@@ -7,7 +7,7 @@ def print_info(info_text, color):
         raise TypeError("Color must be a string")
     if color not in colors:
         raise ValueError("Invalid color")
-    
+
     print(f"Info: {info_text}. Flag: {color}")
 
 

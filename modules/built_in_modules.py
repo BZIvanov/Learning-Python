@@ -1,5 +1,6 @@
 # it will import the whole module
 import random
+
 # it will import only pi from math module
 from math import pi
 
