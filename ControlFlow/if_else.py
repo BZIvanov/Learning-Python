@@ -42,3 +42,14 @@ print(a is b)  # False
 # example with ternary operator
 my_value = 9
 print("Nine") if my_value == 9 else print("Not Nine")  # Nine
+
+# another learning example
+condition_check = True and not False and True or not False
+print(condition_check)
+
+# type checking
+distance = 105.2
+if type(distance) == int or type(distance) == float:
+    print(distance)
+else:
+    print("Invalid distance")

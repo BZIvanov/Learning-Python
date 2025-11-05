@@ -8,6 +8,10 @@ You can download and install Python from the [official website](https://www.pyth
 
 To check the currently installed version of Python in the terminal type `python --version`
 
+## Official documentation
+
+Refer to the official [docs](https://docs.python.org/3/) for detailed information.
+
 ## Content of this repository
 
 It is recommended to follow this learning path in order:
